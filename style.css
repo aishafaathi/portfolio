@@ -1,6 +1,4 @@
-/* ===========================
-   RESET
-=========================== */
+
 
 *{
     margin:0;
@@ -21,9 +19,6 @@ body{
     margin:auto;
 }
 
-/* ===========================
-   HEADER
-=========================== */
 
 header{
     display:flex;
@@ -57,11 +52,6 @@ nav a{
 nav a:hover{
     color:#0C8A5D;
 }
-
-/* ===========================
-   HERO
-=========================== */
-
 .hero{
     display:grid;
     grid-template-columns:55% 45%;
@@ -69,8 +59,6 @@ nav a:hover{
     min-height:100vh;
     padding:40px 0;
 }
-
-/* LEFT */
 
 .left h1{
     font-family:'Bebas Neue',sans-serif;
@@ -95,8 +83,6 @@ nav a:hover{
     color:#555;
     line-height:1.8;
 }
-
-/* BUTTONS */
 
 .buttons{
     display:flex;
@@ -139,8 +125,6 @@ nav a:hover{
     height:700px;
 }
 
-/* GREEN CIRCLE */
-
 .green-circle{
     position:absolute;
     width:320px;
@@ -152,8 +136,6 @@ nav a:hover{
     z-index:1;
 }
 
-/* PROFILE IMAGE */
-
 .profile{
     position:absolute;
     width:560px;
@@ -161,11 +143,6 @@ nav a:hover{
     top:-20px;
     z-index:2;
 }
-
-/* ===========================
-   ABOUT
-=========================== */
-
 .about{
     padding:120px 0;
 }
@@ -186,10 +163,6 @@ nav a:hover{
     line-height:1.9;
     color:#555;
 }
-/* ===========================
-   PROJECTS
-=========================== */
-
 .projects{
     padding:120px 0;
 }
@@ -247,10 +220,6 @@ nav a:hover{
     color:#666;
 }
 
-/* ===========================
-   SKILLS
-=========================== */
-
 .skills{
     padding:120px 0;
 }
@@ -281,11 +250,6 @@ nav a:hover{
     color:#fff;
     border-color:#0C8A5D;
 }
-
-/* ===========================
-   CONTACT
-=========================== */
-
 .contact{
     padding:120px 0;
 }
@@ -315,11 +279,6 @@ nav a:hover{
     margin-bottom:8px;
     font-size:20px;
 }
-
-/* ===========================
-   FOOTER
-=========================== */
-
 footer{
     padding:40px 0;
     text-align:center;
@@ -331,10 +290,6 @@ footer p{
     color:#777;
     font-size:15px;
 }
-
-/* ===========================
-   RESPONSIVE
-=========================== */
 
 @media(max-width:1100px){
 
