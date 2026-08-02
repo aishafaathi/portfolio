@@ -50,6 +50,11 @@ nav a{
 nav a:hover{
     color:#0C8A5D;
 }
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+}
 
 .hero{
     display:grid;
@@ -481,6 +486,23 @@ nav a:hover{
         font-size:15px;
         padding:12px 20px;
     }
+
+    .internship-container{
+    grid-template-columns:1fr;
+}
+
+.internship-card{
+    width:100%;
+    padding:25px;
+}
+
+.internship-card h3{
+    font-size:24px;
+}
+
+.internship-card h4{
+    font-size:20px;
+}
 
 }
 
