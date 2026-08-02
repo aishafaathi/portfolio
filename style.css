@@ -50,6 +50,7 @@ nav a{
 nav a:hover{
     color:#0C8A5D;
 }
+
 .menu-toggle{
     display:none;
     font-size:32px;
@@ -424,16 +425,33 @@ nav a:hover{
 
 @media(max-width:768px){
 
-    header{
-        flex-direction:column;
-        gap:20px;
-    }
+header{
+    position:relative;
+    flex-direction:row;
+    justify-content:space-between;
+}
 
-    nav{
-        gap:20px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+.menu-toggle{
+    display:block;
+}
+
+nav{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#F5F5F3;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:25px 0;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+nav.active{
+    display:flex;
+}
 
     .left h1{
         font-size:82px;
