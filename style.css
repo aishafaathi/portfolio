@@ -38,9 +38,7 @@ header{
 nav{
     display:flex;
     gap:40px;
-    transition:0.3s ease;
 }
-
 
 nav a{
     text-decoration:none;
@@ -51,12 +49,6 @@ nav a{
 
 nav a:hover{
     color:#0C8A5D;
-}
-
-.menu-toggle{
-    display:none;
-    font-size:32px;
-    cursor:pointer;
 }
 
 .hero{
@@ -153,6 +145,8 @@ nav a:hover{
     top:-20px;
     z-index:2;
 }
+
+
 .about{
     padding:120px 0;
 }
@@ -222,6 +216,7 @@ nav a:hover{
     margin-bottom:18px;
     color:#0C8A5D;
 }
+
 .project-card p{
     color:#555;
     line-height:1.8;
@@ -302,14 +297,9 @@ nav a:hover{
     line-height:1.8;
 }
 
-.contact-card a{
-    color:#555;
-    text-decoration:none;
-}
-
-.contact-card a:hover{
-    color:#0C8A5D;
-}
+/* ===========================
+   EXPERIENCE
+=========================== */
 
 .internship{
     padding:120px 0;
@@ -319,7 +309,7 @@ nav a:hover{
     font-family:'Bebas Neue',sans-serif;
     font-size:72px;
     letter-spacing:3px;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
 .internship-container{
@@ -400,14 +390,21 @@ nav a:hover{
         transform:translateX(-50%);
     }
 
+    .about{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
     .section-heading{
         flex-direction:column;
         align-items:flex-start;
     }
 
-    .project-container,
-    .contact-info,
-    .internship-container{
+    .project-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-info{
         grid-template-columns:1fr;
     }
 
@@ -416,39 +413,14 @@ nav a:hover{
 @media(max-width:768px){
 
     header{
-        position:relative;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-    }
-
-    .menu-toggle{
-        display:block;
+        flex-direction:column;
+        gap:20px;
     }
 
     nav{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        position:absolute;
-        top:80px;
-        left:0;
-        width:100%;
-        background:#F5F5F3;
-        padding:25px 0;
         gap:20px;
-        box-shadow:0 10px 20px rgba(0,0,0,.08);
-
-        transform:translateY(-20px);
-        opacity:0;
-        visibility:hidden;
-        transition:all .35s ease;
-    }
-
-    nav.active{
-        transform:translateY(0);
-        opacity:1;
-        visibility:visible;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
     .left h1{
@@ -482,8 +454,7 @@ nav a:hover{
     .about h2,
     .section-heading h2,
     .skills h2,
-    .contact h2,
-    .internship h2{
+    .contact h2{
         font-size:52px;
     }
 
@@ -491,77 +462,17 @@ nav a:hover{
         font-size:18px;
     }
 
-   .project-container{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-    padding:10px 5px;
-    scroll-snap-type:x mandatory;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-}
+    .project-card img{
+        height:250px;
+    }
 
-.project-container::-webkit-scrollbar{
-    display:none;
-}
-
-.project-card{
-    flex:0 0 85%;
-    min-width:85%;
-    scroll-snap-align:center;
-}
-
-.contact-info{
-    grid-template-columns:1fr;
-}
-
-.internship-container{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-    padding:10px 5px;
-    scroll-snap-type:x mandatory;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-}
+    .skills-grid{
+        gap:15px;
+    }
 
     .skills-grid span{
         font-size:15px;
         padding:12px 20px;
     }
-.internship-container::-webkit-scrollbar{
-    display:none;
+
 }
-
-.internship-card{
-    flex:0 0 85%;
-    min-width:85%;
-    scroll-snap-align:center;
-    padding:25px;
-}
-
-.internship-card h3{
-    font-size:24px;
-}
-
-.internship-card h4{
-    font-size:20px;
-}
-
-.skills-grid{
-    gap:15px;
-}
-
-.skills-grid span{
-    font-size:15px;
-    padding:12px 20px;
-} 
-html{
-    scroll-behavior:smooth;
-}
-
-.project-container,
-.internship-container{
-    scroll-behavior:smooth;
-} 
-
